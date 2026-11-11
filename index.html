@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Adithya Raj – IT Professional moving into Platform Engineering</title>
+  <meta name="description" content="Resume of Adithya Raj: five years in system support, infrastructure coordination and automation across AWS, Azure, Docker and Linux.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <div class="layout">
+    <header class="side">
+      <h1>Adithya Raj</h1>
+      <p class="role">Devops Engineer</p>
+
+      <address>
+        <p>London</p>
+        <p><a href="mailto:adithyaraj0511@gmail.com">adithyaraj0511@gmail.com</a></p>
+        <!-- Replace # with your real LinkedIn URL -->
+        <p><a href="https://www.linkedin.com/in/raj-adithya">LinkedIn</a></p>
+        <!-- Phone left off on purpose: public pages get scraped. Add it back if you want it shown. -->
+      </address>
+
+      <nav aria-label="Sections">
+        <a href="#summary">Summary</a>
+        <a href="#experience">Experience</a>
+        <a href="#skills">Skills</a>
+        <a href="#certifications">Certifications</a>
+      </nav>
+
+      <p class="counter">Visitors: <span id="visitor-count">–</span></p>
+    </header>
+
+    <main id="main">
+      <section id="summary">
+        <h2>Summary</h2>
+        <p>Detail-oriented and adaptable IT professional with five years of experience in system support, infrastructure coordination and technical automation. I manage cloud services (AWS and Azure), containers (Docker) and network administration, and I am moving into a specialised Platform Engineering role. My foundation is Ubuntu environments, automation scripting, methodical problem-solving and a disciplined approach to security.</p>
+      </section>
+
+      <section id="experience">
+        <h2>Work experience</h2>
+        <ol class="timeline">
+          <li>
+            <h3>Informatics and IT Coordinator</h3>
+            <p class="meta">Lancaster Medical Practice · Oct 2023 – present</p>
+            <ul>
+              <li>Coordinate and monitor local IT infrastructure, keeping critical network systems up and meeting strict data protection and operational guidelines.</li>
+              <li>Administer directory services with Active Directory and manage cloud resources in Microsoft Azure, securing user authentication and access controls.</li>
+              <li>Troubleshoot complex network issues involving DNS, DHCP and secure VPN connections across local endpoints.</li>
+              <li>Maintain auditable technical documentation for internal systems to support quality assurance and compliance audits.</li>
+            </ul>
+          </li>
+
+          <li>
+            <h3>IT Support Engineer</h3>
+            <p class="meta">ExComs Illustrations · Jul 2022 – Jul 2023</p>
+            <ul>
+              <li><strong>Infrastructure deployments:</strong> configured, tested and integrated new hardware and software into the corporate network during rapid office expansions, checking network and storage suitability.</li>
+              <li><strong>System testing and validation:</strong> ran large-scale hardware refreshes and software rollouts, with post-migration validation that kept users free of downtime.</li>
+              <li><strong>Security compliance:</strong> managed endpoint security, antivirus configuration and OS patching across physical and virtual servers.</li>
+            </ul>
+          </li>
+
+          <li>
+            <h3>Network Support Consultant</h3>
+            <p class="meta">RMESI · Aug 2021 – Nov 2021</p>
+            <ul>
+              <li><strong>High-volume performance:</strong> supported infrastructure for higher education institutions, holding service availability and meeting strict SLAs for 50,000+ monthly users.</li>
+              <li><strong>Root cause analysis:</strong> used enterprise logging and ticketing tools to find systemic trends and engineer permanent fixes for recurring outages.</li>
+            </ul>
+          </li>
+
+          <!--
+            NexNet: your pasted resume ended at the company name.
+            Copy the block above, fill in the role, dates and bullets, and add it here.
+          -->
+        </ol>
+      </section>
+
+      <section id="skills">
+        <h2>Technical skills</h2>
+        <dl class="skills">
+          <div><dt>Operating systems</dt><dd>Linux (Ubuntu, Debian), Windows 11 23H2</dd></div>
+          <div><dt>Containers and DevOps</dt><dd>Docker, Kubernetes, Git</dd></div>
+          <div><dt>Automation and scripting</dt><dd>Python (Flask), Bash/shell scripting basics</dd></div>
+          <div><dt>Cloud and directory services</dt><dd>Microsoft Azure, AWS, Active Directory</dd></div>
+          <div><dt>Networking</dt><dd>DNS, DHCP, VPN configuration</dd></div>
+          <div><dt>Methods and compliance</dt><dd>ISO standards awareness, documentation, ITIL framework</dd></div>
+        </dl>
+      </section>
+
+      <section id="certifications">
+        <h2>Certifications</h2>
+        <ul class="certs">
+          <li>AWS Certified Solutions Architect – Associate</li>
+        </ul>
+      </section>
+
+      <footer>
+        <p>Hosted on AWS and served with nginx.</p>
+      </footer>
+    </main>
+  </div>
+
+  <script>
+    // Cloud Resume Challenge visitor counter.
+    // Replace the URL with your API Gateway / Lambda endpoint that returns {"count": 123}.
+    const API_URL = "";
+    const el = document.getElementById("visitor-count");
+    if (API_URL) {
+      fetch(API_URL, { method: "POST" })
+        .then(r => r.json())
+        .then(d => { el.textContent = d.count; })
+        .catch(() => { el.textContent = "unavailable"; });
+    }
+  </script>
+</body>
+</html>
